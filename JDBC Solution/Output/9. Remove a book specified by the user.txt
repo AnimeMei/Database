@@ -1,0 +1,75 @@
+9
+
+Remove a book:
+1. Delete by Book title
+2. Delete by Year Published
+3. Delete by Number of Pages
+4. Delete by Group Name
+5. Delete by Publisher Name
+1
+1)Read Me If You Are Bored
+2)He Who Shall Not Be Named
+3)df
+4)Abraba Cadabra, A Beginers Guide
+5)Coding the matrix
+6)Women and the dog
+7)Dracula
+8)How To Make Tiny Hands Look Huge
+Enter the title of the book you would like to delete
+df
+Book have been deleted
+--------------------------------------------------------
+9
+
+Remove a book:
+1. Delete by Book title
+2. Delete by Year Published
+3. Delete by Number of Pages
+4. Delete by Group Name
+5. Delete by Publisher Name
+2
+Enter the year published of the book you would like to delete
+2026
+Book have been deleted
+--------------------------------------------------------
+9
+
+Remove a book:
+1. Delete by Book title
+2. Delete by Year Published
+3. Delete by Number of Pages
+4. Delete by Group Name
+5. Delete by Publisher Name
+3
+Enter the year number of pages of the book you would like to delete
+232
+Book have been deleted
+--------------------------------------------------------
+4
+
+choose one of these registered group names
+1)Consumer Group
+2)Dating Group
+3)Drumpf
+4)Jabronis
+5)JackNFriends
+6)Mystic Authors
+7)TrumpNCrew
+8)Witch's Brew
+9)WizardsNCo
+Enter the year name of the group of the book you would like to delete
+CSULB Eucation
+Book have been deleted
+--------------------------------------------------------
+5
+
+choose one of these registered group names
+1)Book Publishing
+2)CSULB Eucation
+3)CSULB Publisher
+4)LB Publishing
+5)McGraw Hill
+6)New York Times
+Enter the year publisher's name of the book you would like to delete
+LB Publishing
+Book have been deleted

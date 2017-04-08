@@ -1,0 +1,106 @@
+-- Zhipeng Mei
+-- 3/21/2017
+DROP TABLE Book; 
+DROP TABLE WritingGroup; 
+DROP TABLE Publisher;
+
+CREATE TABLE WritingGroup
+    (
+    GroupName   VARCHAR(50) NOT NULL,  
+    HeadWriter  VARCHAR(20),  
+    YearFormed  VARCHAR(4),  
+    Subject     VARCHAR(30),  
+    CONSTRAINT pk_WritingGroup PRIMARY KEY (GroupName)  
+    );
+
+CREATE TABLE Publisher 
+    (  
+    PublisherName       VARCHAR(50) NOT NULL,  
+    PublisherAddress    VARCHAR(50),  
+    PublisherPhone      VARCHAR(12),  
+    PublisherEmail      VARCHAR(50),  
+    CONSTRAINT pk_Publisher PRIMARY KEY (PublisherName)  
+    );
+
+CREATE TABLE Book 
+    (  
+    BookTitle       VARCHAR(50) NOT NULL,  
+    YearPublished   VARCHAR(4),  
+    NumberPages     INTEGER,  
+    GroupName       VARCHAR(50) REFERENCES WritingGroup (GroupName),  
+    PublisherName   VARCHAR(50) REFERENCES Publisher (PublisherName),  
+    CONSTRAINT fk_Book_WritingGroup FOREIGN KEY (GroupName) REFERENCES WritingGroup (GroupName),  
+    CONSTRAINT fk_Book_Publisher FOREIGN KEY (PublisherName) REFERENCES Publisher (PublisherName),  
+    CONSTRAINT pk_Book PRIMARY KEY (BookTitle, GroupName)  
+    );
+
+INSERT INTO Publisher 
+    (PublisherName, PublisherAddress, PublisherPhone, PublisherEmail) 
+    VALUES ('New York Times', '1314 Broadway', '339-227-1010', 'nytimes@gmail.com'); 
+
+INSERT INTO WritingGroup 
+    (GroupName, HeadWriter, YearFormed, Subject) 
+    VALUES ('Dating Group', 'Johhny Dap', '1999', 'Dating');
+
+
+
+INSERT INTO Publisher (PublisherName, PublisherAddress, PublisherPhone, PublisherEmail)
+    VALUES('Olympic Publishing','123 Athens Dr.','3104439090','olympicpub@op.com');
+INSERT INTO Publisher (PublisherName, PublisherAddress, PublisherPhone, PublisherEmail)
+    VALUES('McGraw Hill','8645 Mitch Ave.','5623340909','steve@mcgrawhill.com');
+INSERT INTO Publisher (PublisherName, PublisherAddress, PublisherPhone, PublisherEmail)
+    VALUES('LB Publishing','456 Atherton Dr.','9496782887','jeff@lbpublishing.com');
+INSERT INTO Publisher (PublisherName, PublisherAddress, PublisherPhone, PublisherEmail)
+    VALUES('JoeBlow Publishers','12 Book Ln.','5106551020','joe@jbpublishers.com');
+INSERT INTO Publisher (PublisherName, PublisherAddress, PublisherPhone, PublisherEmail)
+    VALUES('PB Clearinghouse','1 World Dr.','3033033030','winner@pbch.com');
+INSERT INTO Publisher (PublisherName, PublisherAddress, PublisherPhone, PublisherEmail)
+    VALUES('Book Publishing','666 Hell Ave.','4406540001','person@bkpub.com');
+INSERT INTO Publisher (PublisherName, PublisherAddress, PublisherPhone, PublisherEmail)
+    VALUES('Peters Publishing','8646 Melva St.','5619158642','peter@peterspublishing.com');
+INSERT INTO Publisher (PublisherName, PublisherAddress, PublisherPhone, PublisherEmail)
+    VALUES('TrumpedUp Publishers','1 Fake Rd.','7075701122','donaldjtrump@smallhands.com');
+
+INSERT INTO WritingGroup (GroupName, HeadWriter, YearFormed, Subject)
+    VALUES('TrumpNCrew', 'Donald Trump', '2011', 'Fiction');
+INSERT INTO WritingGroup (GroupName, HeadWriter, YearFormed, Subject)
+    VALUES('JackNFriends', 'Jack Anderson', '2012', 'Horror');
+INSERT INTO WritingGroup (GroupName, HeadWriter, YearFormed, Subject)
+    VALUES('Jabronis', 'Mike Lucetti', '2010', 'History');
+INSERT INTO WritingGroup (GroupName, HeadWriter, YearFormed, Subject)
+    VALUES('Mystic Authors', 'Dumbledore', '1942', 'Fantasy');
+INSERT INTO WritingGroup (GroupName, HeadWriter, YearFormed, Subject)
+    VALUES('Witch''s Brew', 'Dumbledore', '1941', 'Fantasy');
+INSERT INTO WritingGroup (GroupName, HeadWriter, YearFormed, Subject)
+    VALUES('WizardsNCo', 'Dumbledore', '1941', 'Fantasy');
+INSERT INTO WritingGroup (GroupName, HeadWriter, YearFormed, Subject)
+    VALUES('Drumpf', 'Donald Trump', '2014', 'Fiction');
+
+INSERT INTO Book (GroupName, BookTitle, PublisherName, YearPublished, NumberPages)
+    VALUES('TrumpNCrew', 'Make America Great Again!', 'TrumpedUp Publishers', '2016', 2);
+INSERT INTO Book (GroupName, BookTitle, PublisherName, YearPublished, NumberPages)
+    VALUES('TrumpNCrew', 'Taxes Schmakses', 'TrumpedUp Publishers', '2012', 1005);
+INSERT INTO Book (GroupName, BookTitle, PublisherName, YearPublished, NumberPages)
+    VALUES('JackNFriends', 'Dracula', 'Book Publishing', '2013', 232);
+INSERT INTO Book (GroupName, BookTitle, PublisherName, YearPublished, NumberPages)
+    VALUES('Mystic Authors', 'He Who Shall Not Be Named', 'LB Publishing', '2000', 645);
+INSERT INTO Book (GroupName, BookTitle, PublisherName, YearPublished, NumberPages)
+    VALUES('Witch''s Brew', 'Hocus Pocus', 'PB Clearinghouse', '1948', 301);
+INSERT INTO Book (GroupName, BookTitle, PublisherName, YearPublished, NumberPages)
+    VALUES('WizardsNCo', 'Abraba Cadabra, A Beginers Guide', 'McGraw Hill', '1979', 172);
+INSERT INTO Book (GroupName, BookTitle, PublisherName, YearPublished, NumberPages)
+    VALUES('Drumpf', 'How To Make Tiny Hands Look Huge', 'Book Publishing', '2014', 9);
+INSERT INTO Book (GroupName, BookTitle, PublisherName, YearPublished, NumberPages)
+    VALUES('JackNFriends', 'Read Me If You Are Bored', 'McGraw Hill', '2002', 101);
+INSERT INTO Book (GroupName, BookTitle, PublisherName, YearPublished, NumberPages)
+    VALUES('TrumpNCrew', 'How to be Trumptastic', 'TrumpedUp Publishers', '2016', 480);
+INSERT INTO Book (GroupName, BookTitle, PublisherName, YearPublished, NumberPages)
+    VALUES('Jabronis', 'What You Looking At???', 'Olympic Publishing', '2016', 221);
+INSERT INTO Book (GroupName, BookTitle, PublisherName, YearPublished, NumberPages)
+    VALUES('WizardsNCo', 'Secrets Of The White Wizards', 'Peters Publishing', '1979', 906);
+INSERT INTO Book (GroupName, BookTitle, PublisherName, YearPublished, NumberPages)
+    VALUES('Mystic Authors', 'Database Design For Smart People', 'PB Clearinghouse', '1997', 582);
+
+select * from Publisher; 
+select * from WritingGroup; 
+select * from Book

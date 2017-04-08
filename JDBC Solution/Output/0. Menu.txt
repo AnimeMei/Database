@@ -1,0 +1,20 @@
+Connecting to database...
+Creating statement...
+
+
+Choose one of the following:
+1. List all writing groups.
+2. List all the data for a group specified by the user.
+3. List all publishers.
+4. List all the data for a pubisher specified by the user.
+5. List all book titles.
+6. List all the data for a book specified by the user.
+7. Insert a new book.
+8. Insert a new publisher and update all book published by one publisher to be published by the new pubisher. 
+9. Remove a book specified by the user. 
+10. Log out.
+
+10
+
+Logging Out...
+Goodbye!

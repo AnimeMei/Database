@@ -1,0 +1,24 @@
+8
+Insert a new publisher ...
+Enter the publisher's name
+CSULB Eucation
+Enter the publisher's address: (123 street) 
+123 Palo verde
+Enter the publisher phone: (123-123-1234) 666-333-2222
+Enter the publisher email: (123@123.com) 
+csulb@ed.edu
+have been inserted
+Book published by one publisher to be published by the new publisher:
+1)yes, please.
+2)NO!!
+1
+1)Book Publishing
+2)CSULB Eucation
+3)CSULB Publisher
+4)LB Publishing
+5)McGraw Hill
+6)New York Times
+
+Enter the name of the publisher that will be updated: 
+Book Publishing
+just updated!

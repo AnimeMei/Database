@@ -1,0 +1,31 @@
+7
+Enter the title of the book:
+Coding the matrix
+Enter the Year Published:
+1989
+Enter the Number of Pages:
+500
+
+choose one of these registered group names
+1)Consumer Group
+2)Dating Group
+3)Drumpf
+4)Jabronis
+5)JackNFriends
+6)Mystic Authors
+7)TrumpNCrew
+8)Witch's Brew
+9)WizardsNCo
+
+Enter the Group Name:
+Drumpf
+
+choose one of these registered group names
+1)Book Publishing
+2)LB Publishing
+3)McGraw Hill
+4)New York Times
+
+Enter Publisher Name:
+Book Publishing
+New book have been inserted

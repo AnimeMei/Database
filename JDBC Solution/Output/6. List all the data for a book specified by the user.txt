@@ -1,0 +1,75 @@
+6
+Choose which attrabute to insert then press p to print.
+Press p to print
+
+1.Book Title
+2.Year Published
+3.Number of Pages
+4.Group Name
+5.Publisher Name
+1
+
+Inserted Book Title
+
+Press p to print
+
+1.Book Title
+2.Year Published
+3.Number of Pages
+4.Group Name
+5.Publisher Name
+2
+
+Inserted year published
+
+Press p to print
+
+1.Book Title
+2.Year Published
+3.Number of Pages
+4.Group Name
+5.Publisher Name
+3
+
+Inserted number of pages
+
+Press p to print
+
+1.Book Title
+2.Year Published
+3.Number of Pages
+4.Group Name
+5.Publisher Name
+4
+
+Inserted Group name
+
+Press p to print
+
+1.Book Title
+2.Year Published
+3.Number of Pages
+4.Group Name
+5.Publisher Name
+5
+
+Inserted publisher name
+
+Press p to print
+
+1.Book Title
+2.Year Published
+3.Number of Pages
+4.Group Name
+5.Publisher Name
+p
+
+Printing chosen attrabutes
+
+ Book Title: Year Published: NumberPages:  Group Name:  Publisher Name:  
+Women and the dog  ,2026  ,69  ,Consumer Group  ,New York Times  ,
+Dracula  ,2013  ,232  ,JackNFriends  ,Book Publishing  ,
+He Who Shall Not Be Named  ,2000  ,645  ,Mystic Authors  ,LB Publishing  ,
+Abraba Cadabra, A Beginers Guide  ,1979  ,172  ,WizardsNCo  ,McGraw Hill  ,
+How To Make Tiny Hands Look Huge  ,2014  ,9  ,Drumpf  ,Book Publishing  ,
+Read Me If You Are Bored  ,2002  ,101  ,JackNFriends  ,McGraw Hill  ,
